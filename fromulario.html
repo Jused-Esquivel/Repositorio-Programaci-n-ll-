@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>Formulario de Inscripción</title>
+</head>
+
+<body>
+
+<h1>Formulario de Registro</h1>
+
+<form>
+
+Tipo de documento:
+<select name="tipo_doc">
+<option>Cédula</option>
+<option>Tarjeta de identidad</option>
+<option>Pasaporte</option>
+</select>
+<br><br>
+
+Número de documento:
+<input type="number" name="documento" required>
+<br><br>
+
+Nombres:
+<input type="text" name="nombre" minlength="3" maxlength="64" required>
+<br><br>
+
+Apellidos:
+<input type="text" name="apellido" minlength="3" maxlength="64" required>
+<br><br>
+
+Dirección:
+<input type="text" name="direccion">
+<br><br>
+
+Teléfono fijo:
+<input type="tel" name="telefono">
+<br><br>
+
+Celular:
+<input type="tel" name="celular">
+<br><br>
+
+Correo:
+<input type="email" name="correo" required>
+<br><br>
+
+Usuario:
+<input type="text" name="usuario"
+pattern="[A-Za-z]{3,14}[0-9]{0,2}" required>
+<br><br>
+
+Password:
+<input type="password" name="password" required>
+<br><br>
+
+Fecha inscripción:
+<input type="date" min="2026-02-15" max="2026-03-10">
+<br><br>
+
+Hobbies:
+<br>
+<input type="checkbox"> Deportes
+<input type="checkbox"> Música
+<input type="checkbox"> Videojuegos
+<input type="checkbox"> Viajar
+<br><br>
+
+<input type="submit" value="Enviar">
+<input type="reset" value="Limpiar">
+
+</form>
+
+</body>
+</html>
